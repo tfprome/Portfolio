@@ -9,7 +9,7 @@ const HeroSection = () => {
         loop: 0
     })
     return (
-        <div id='home' className='flex flex-col-reverse md:flex-row w-11/12 mx-auto my-10 justify-center items-center md:items-start'>
+        <div id='home' className='flex flex-col-reverse md:flex-row w-11/12 mx-auto my-10 justify-center items-center md:items-start '>
             {/* hero section text parts  */}
             <div className='w-2/3 text-center md:text-start'>
 
