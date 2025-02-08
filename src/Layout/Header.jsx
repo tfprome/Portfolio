@@ -1,9 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DarkModeToggle from "react-dark-mode-toggle";
 import { Link } from "react-scroll";
 
 const Header = () => {
-    const [isDarkMode, setIsDarkMode] = useState(() => false);
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+        return localStorage.getItem('theme')==='dark';
+    });
+    useEffect(()=>{
+        if(isDarkMode){
+            document.documentElement.classList.add('dark')
+            localStorage.setItem('theme','dark')
+        }
+        else{
+            document.documentElement.classList.remove('dark')
+            localStorage.setItem('theme','light')
+        }
+    },[isDarkMode])
     const links = <>
         <Link className="mr-4 hover:bg-blue-400 hover:text-white hover:btn-xs hover:rounded-lg" spy={true}
             activeClass=" bg-sky-500 text-white rounded-lg px-2 " to="home"><li className='hover:cursor-pointer   text-base font-semibold' >Home</li></Link>
@@ -20,7 +32,7 @@ const Header = () => {
     </>
     return (
 
-        <div className="sticky top-0 bg-sky-100 z-50 ">
+        <div className="sticky top-0 bg-sky-100 dark:bg-sky-900 dark:text-white z-50 ">
             <div className='w-11/12 mx-auto   '>
 
 
@@ -49,7 +61,7 @@ const Header = () => {
                                 }
                             </ul>
                         </div>
-                        <a className="px-4 py-2 rounded-sm bg-sky-600 text-white text-lg hover:bg-sky-800 hover:scale-105" href='https://wa.me/8801791669909?text=Hi%20there%2C%20I%27m%20interested%20in%20working%20with%20you!' target="_blank">Hire Me</a>
+                        <a className="px-4 py-2 rounded-sm bg-sky-600 dark:bg-sky-200 dark:text-gray-900 text-white text-lg dark:hover:bg-sky-300 hover:bg-sky-800 hover:scale-105" href='https://wa.me/8801791669909?text=Hi%20there%2C%20I%27m%20interested%20in%20working%20with%20you!' target="_blank">Hire Me</a>
 
 
                     </div>

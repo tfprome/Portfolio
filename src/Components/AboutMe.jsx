@@ -9,7 +9,7 @@ const AboutMe = () => {
         AOS.init({
             duration: 1000, // Animation duration in milliseconds
             easing: "ease-in-out",
-            delay:100, // Animation easing
+            delay: 100, // Animation easing
             // Whether animation should happen only once
         });
     }, []);
@@ -17,15 +17,21 @@ const AboutMe = () => {
     return (
         <div id='about-me' className='pt-10'>
             {/* title  */}
-            <h1 className='text-6xl text-center font-bold '>About Me</h1>
+            <h1 className='text-6xl text-center font-bold mb-10'>About Me</h1>
 
             {/* section content */}
-            <div  className='w-11/12 mx-auto flex flex-col md:flex-row gap-20 items-center z-10'>
-                <div data-aos="fade-down" className='w-2/5'>
+            <div className='w-11/12 mx-auto flex flex-col md:flex-row gap-10 items-center z-10'>
+                <div data-aos="fade-down" className='md:w-1/5 w-1/2 '>
                     <Lottie animationData={coding}></Lottie>
                 </div>
-                <div data-aos="fade-down" className='w-3/5'>
-                    <p className='text-2xl  '>I'm a web developer with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release.Currently, I'm focused on the backend development.</p>
+                <div data-aos="fade-down" className='md:w-4/5 text-justify'>
+                    <p className='  '>Hello! I'm a front-end developer from Bangladesh with a deep passion for building innovative and user-friendly websites. My programming journey began at Mymensingh Engineering College, where I earned my B.Sc. in Computer Science and Engineering. It was there that I discovered my love for coding and design. Over time, I’ve grown proficient in HTML, CSS, JavaScript, React, Tailwind CSS, and I also work with Node.js and Express.js to create robust full-stack applications.
+                        <br />
+                        <br />
+                        I enjoy working on projects that challenge me and push my creativity. My favorite part of web development is combining aesthetics with functionality to create smooth, intuitive user experiences. I thrive in a collaborative environment and love teamwork, as it sparks new ideas and encourages growth. When I’m not immersed in coding, you’ll find me reading up on the latest trends, working on personal projects, or enjoying a game of cricket. I also love playing the guitar when I need to unwind and find some inspiration.
+                        <br />
+                        <br />
+                        I believe in the power of continuous learning and always strive to improve my skills. My ultimate goal is to create websites that leave a lasting impact, all while having fun along the way.</p>
                 </div>
             </div>
         </div>
