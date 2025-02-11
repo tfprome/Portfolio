@@ -7,17 +7,18 @@ import "aos/dist/aos.css";
 const AboutMe = () => {
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Animation duration in milliseconds
+            duration: 500, // Animation duration in milliseconds
             easing: "ease-in-out",
-            delay: 100, // Animation easing
+            delay: 0, // Animation easing
             // Whether animation should happen only once
         });
+        return () => AOS.refreshHard();
     }, []);
 
     return (
-        <div id='about-me' className='pt-10'>
+        <div id='about-me' className='pt-20'>
             {/* title  */}
-            <h1 className='text-6xl text-center font-bold mb-10'>About Me</h1>
+            <h1 className='text-5xl text-center font-bold mb-14'>About Me</h1>
 
             {/* section content */}
             <div className='w-11/12 mx-auto flex flex-col md:flex-row gap-10 items-center z-10'>

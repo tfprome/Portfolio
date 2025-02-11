@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import DarkModeToggle from "react-dark-mode-toggle";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+import { Link as Links } from "react-scroll";
 
 const Header = () => {
     const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -17,23 +18,23 @@ const Header = () => {
         }
     },[isDarkMode])
     const links = <>
-        <Link className="mr-4 hover:bg-blue-400 hover:text-white hover:btn-xs hover:rounded-lg" spy={true}
-            activeClass=" bg-sky-500 text-white rounded-lg px-2 " to="home"><li className='hover:cursor-pointer   text-base font-semibold' >Home</li></Link>
-        <Link className="mr-4 hover:bg-blue-400 hover:text-white hover:btn-xs hover:rounded-lg transition-all ease-in-out " to="about-me" spy={true}
-            activeClass=" bg-sky-500 text-white rounded-lg px-2 " ><li className='hover:cursor-pointer  text-base font-semibold' >About_Me</li></Link>
-        <Link className="mr-4 hover:bg-blue-400 hover:text-white hover:btn-xs hover:rounded-lg transition-all ease-in-out " spy={true}
-            activeClass=" bg-sky-500 text-white rounded-lg px-2 " to="skill"><li className='hover:cursor-pointer  text-base font-semibold' >Skill</li></Link>
-        <Link className="mr-4 hover:bg-blue-400 hover:text-white hover:btn-xs hover:rounded-lg transition-all ease-in-out " spy={true}
-            activeClass=" bg-sky-500 text-white rounded-lg px-2 " to="projects"><li className='hover:cursor-pointer  text-base font-semibold' >Projects</li></Link>
-        <Link className="mr-4 hover:bg-blue-400 hover:text-white hover:btn-xs hover:rounded-lg transition-all ease-in-out " spy={true}
-            activeClass=" bg-sky-500 text-white rounded-lg px-2 " to="contact-me"><li className='hover:cursor-pointer  text-base font-semibold' >Contact_Me</li></Link>
+        <Link className="mr-4 hover:bg-blue-400 hover:text-white hover:btn-xs hover:rounded-lg" 
+            activeClass=" bg-sky-500 text-white rounded-lg px-2 " to="/"><li className='hover:cursor-pointer   text-base font-semibold' >Home</li></Link>
+        <Links className="mr-4 hover:bg-blue-400 hover:text-white hover:btn-xs hover:rounded-lg transition-all ease-in-out " to="about-me" spy={true}
+            activeClass=" bg-sky-500 text-white rounded-lg px-2 " ><li className='hover:cursor-pointer  text-base font-semibold' >About_Me</li></Links>
+        <Links className="mr-4 hover:bg-blue-400 hover:text-white hover:btn-xs hover:rounded-lg transition-all ease-in-out " spy={true}
+            activeClass=" bg-sky-500 text-white rounded-lg px-2 " to="skill"><li className='hover:cursor-pointer  text-base font-semibold' >Skill</li></Links>
+        <Links className="mr-4 hover:bg-blue-400 hover:text-white hover:btn-xs hover:rounded-lg transition-all ease-in-out " spy={true}
+            activeClass=" bg-sky-500 text-white rounded-lg px-2 " to="projects"><li className='hover:cursor-pointer  text-base font-semibold' >Projects</li></Links>
+        <Links className="mr-4 hover:bg-blue-400 hover:text-white hover:btn-xs hover:rounded-lg transition-all ease-in-out " spy={true}
+            activeClass=" bg-sky-500 text-white rounded-lg px-2 " to="contact-me"><li className='hover:cursor-pointer  text-base font-semibold' >Contact_Me</li></Links>
 
 
     </>
     return (
 
-        <div className="sticky top-0 bg-sky-100 dark:bg-sky-900 dark:text-white z-50 ">
-            <div className='w-11/12 mx-auto   '>
+        <div className="sticky top-0 bg-sky-200 dark:bg-blue-900 dark:text-white z-50 shadow-lg">
+            <div className='w-11/12 mx-auto '>
 
 
                 <div className="navbar">

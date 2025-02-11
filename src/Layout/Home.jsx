@@ -4,7 +4,7 @@ import AboutMe from '../Components/AboutMe';
 import Skill from '../Components/Skill';
 import Contact from '../Components/Contact';
 import Projects from '../Components/Projects';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 
 
 

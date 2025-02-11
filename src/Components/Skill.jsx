@@ -11,9 +11,9 @@ import tailwind from "../assets/tailwind.png"
 
 const Skill = () => {
     return (
-        <div id='skill' className='w-11/12 mx-auto pt-10'>
-            <h1 className='text-6xl font-bold text-center'>Skills</h1>
-            <div className='py-10'>
+        <div id='skill' className='w-11/12 mx-auto pt-20'>
+            <h1 className='text-5xl font-bold text-center'>Skills</h1>
+            <div className='pt-14 pb-20'>
                 
                 <Marquee>
                     <div className='flex flex-col justify-center items-center border-2 border-sky-600 p-4 mr-10 '>

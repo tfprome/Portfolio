@@ -24,8 +24,8 @@ const Contact = () => {
             form.current.reset();
     }
     return (
-        <div id='contact-me' className='w-11/12 mx-auto py-10'>
-            <h1 className='text-6xl font-bold text-center'>Contact</h1>
+        <div id='contact-me' className='w-11/12 mx-auto pb-20'>
+            <h1 className='text-5xl font-bold text-center mb-14'>Contact</h1>
             <div>
                 <div className='flex flex-col md:flex-row md:gap-10'>
                     <form ref={form} onSubmit={sendEmail} className='md:w-1/2 dark:text-white'>
@@ -33,19 +33,19 @@ const Contact = () => {
                             <label className="label">
                                 <span className="label-text text-lg font-semibold dark:text-white">Your Name</span>
                             </label>
-                            <input type="text" name="user_name" placeholder="Enter your name" className="input input-bordered dark:bg-sky-700 dark:placeholder-gray-200 dark:text-white" required />
+                            <input type="text" name="user_name" placeholder="Enter your name" className="input input-bordered dark:bg-sky-800 dark:placeholder-gray-200 dark:text-white" required />
                         </div>
                         <div className='form-control'>
                             <label className="label">
                                 <span className="label-text text-lg font-semibold dark:text-white">Your Email</span>
                             </label>
-                            <input type="email" name="user_email" placeholder="Enter your email" className="input input-bordered  dark:bg-sky-700 dark:placeholder-gray-200 dark:text-white" required />
+                            <input type="email" name="user_email" placeholder="Enter your email" className="input input-bordered  dark:bg-sky-800 dark:placeholder-gray-200 dark:text-white" required />
                         </div>
                         <div className='form-control'>
                             <label className="label">
                                 <span className="label-text text-lg font-semibold dark:text-white">Message</span>
                             </label>
-                            <textarea type="text" name="message" placeholder="Enter your message" className="input input-bordered h-28  dark:bg-sky-700 dark:placeholder-gray-200 dark:text-white" required />
+                            <textarea type="text" name="message" placeholder="Enter your message" className="input input-bordered h-28  dark:bg-sky-800 dark:placeholder-gray-200 dark:text-white" required />
                         </div>
                         <div className="mt-6">
                             <button className="btn bg-sky-600 w-full text-white border-none dark:bg-sky-400 dark:hover:bg-sky-500 dark:text-gray-100">Send Message</button>
