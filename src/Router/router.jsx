@@ -17,21 +17,22 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
+      {
+        path: "/library",
+        element: <Library></Library>,
+      },
+      {
+        path: "/visa",
+        element:<Visa></Visa>,
+      },
+      {
+        path: "/lingobingo",
+        element:<LingoBingo></LingoBingo>,
+      },
 
     ]
   },
-  {
-    path: "/library",
-    element: <Library></Library>,
-  },
-  {
-    path: "/visa",
-    element:<Visa></Visa>,
-  },
-  {
-    path: "/lingobingo",
-    element:<LingoBingo></LingoBingo>,
-  },
+  
 ]);
 
 export default router;

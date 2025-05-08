@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Library = () => {
     return (
         <div>
-            <div className='fixed top-0 bg-sky-200 w-full py-3 text-2xl text-center'><Link to={'/'}><button className='btn bg-sky-600 text-white dark:text-white'>Back to Home</button></Link></div>
+            <div className='fixed top-0 bg-sky-200 w-full py-3 text-2xl text-center'><Link to="/"><button className='btn bg-sky-600 text-white dark:text-white'>Back to Home</button></Link></div>
             <div className='pt-20'>
                 <div className="p-6 max-w-3xl mx-auto  shadow-md ">
                     <h2 className="text-3xl font-bold text-center pt-6 pb-10 ">E-Library</h2>

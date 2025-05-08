@@ -1,54 +1,78 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaSquareFacebook, FaX } from "react-icons/fa6";
 import { useTypewriter } from 'react-simple-typewriter'
 import HeroImage from "../assets/hasib-formal  compressed square-min.png"
 import download from "../assets/download.png"
+import { Link } from 'react-scroll';
 const HeroSection = () => {
+    const socialStyle = 'hover:text-primary transition-all ease-in-out duration-300'
     const [text] = useTypewriter({
-        words: ['Front-End Developer', 'Student', 'Learner'],
+        words: ['I build beautiful, interactive, and responsive websites. ', 'I transform ideas into digital reality. ', 'I create engaging user experiences. '],
         loop: 0
     })
     return (
-        <div className='bg-[url("/cloudBg.f28b5c6961fd82be839c.png")] dark:bg-[url("/nightSky.jpg")] dark:  bg-cover bg-bottom bg-fixed'>
+        <div id='hero' className=' bg-base-100  min-h-screen'>
 
-            <div className='dark:bg-black dark:bg-opacity-50'>
-                <div id='home' className='flex flex-col-reverse md:flex-row w-11/12 mx-auto py-10 justify-center items-center md:items-start 
+            <div className='h-full  bg-graph-paper relative'>
+
+                <div id='home' className='flex flex-col lg:flex-row py-20 justify-between items-center gap-20  max-w-7xl px-10  mx-auto relative z-20
          '>
                     {/* hero section text parts  */}
-                    <div className='w-2/3 text-center md:text-start'>
+                    <div className='lg:w-2/3 '>
 
-                        {/* title  */}
-                        <h3 className='text-2xl lg:text-6xl md:text-4xl font-bold text-black dark:text-white'>Hi, I am Hasibul Hasan</h3>
-                        <h3 className='text-2xl lg:text-6xl md:text-4xl font-bold text-sky-600 dark:text-sky-300'><span>{text}</span><span className='animate-blink '>!</span></h3>
+                        {/* role  */}
+                        <h5 className='text-primary text-sm rounded-full bg-gray-700 btn hover:bg-gray-700 cursor-auto px-3 py-1 min-h-0 h-auto border-none'>Junior Fullstack Developer</h5>
+                        {/* header tittle  */}
+                        <h3 className='text-4xl lg:text-6xl md:text-5xl font-semibold md:font-bold text-white lg:w-[500px] py-7'>Creating digital <span className="bg-gradient-to-r from-primary to-secondary text-transparent bg-clip-text">experiences</span> that inspire</h3>
+                        {/* typewriter */}
+                        <h3 className='text-lg md:text-[1.3rem] text-gray-300'><span>{text}</span><span className='animate-blink text-primary font-bold'>|</span></h3>
                         {/* title details  */}
-                        <h4 className='text-xl dark:text-gray-200 mt-8 font-semibold md:w-4/5'>I am a Front-End Developer. I am currently seeking opportunity to apply my expertise as a Front-End Developer.</h4>
+                        <h4 className=' mt-6 text-gray-400 md:w-2/3'>Passionate about crafting clean code and pixel-perfect designs that deliver exceptional user experiences.</h4>
+
+                        {/* CTA buttons  */}
+                        <div className='flex gap-5 my-10'>
+                            {/* view resume using google drive  */}
+                            <a href="https://drive.google.com/file/d/1gmVgmsByTshx3cPtmET7qTub18g-DG7J/view?usp=sharing" target='_blank' className='btn bg-gradient-to-r from-primary to-secondary border-none hover:bg-gradient-to-r text-lg font-normal text-base-100 rounded-full px-3 py-2 md:py-auto md:px-6 hover:shadow-lg hover:shadow-primary/60'>Resume</a>
+
+                            {/* resume direct download button  */}
+                            {/* <a href="/Resume(Md. Hasibul Hasan) bw.pdf" download="Hasibul Hasan's resume" className='btn btn-ghost bg-sky-600 text-lg font-semibold text-white'><img className='w-6' src={download} alt="" /> Download Resume</a> */}
+
+                            {/* jump to project section  */}
+                            <Link to='projects' className='btn bg-transparent hover:bg-transparent border border-gray-600 hover:border-primary text-base font-normal text-white rounded-full px-3 py-2 h md:py-auto md:px-6'>View My Work</Link>
+
+                            {/* resume direct view button  */}
+                            {/* <a href="/Resume(Md. Hasibul Hasan) bw.pdf" target='_blank'
+                                rel="noopener noreferrer" className='btn btn-ghost bg-sky-400 text-lg font-semibold text-white dark:text-gray-100 dark:bg-sky-500'> View Resume</a> */}
+                        </div>
 
                         {/* social icons  */}
-                        <div className='flex text-4xl my-10 gap-5'>
-                            <a className='text-blue-700  dark:text-white dark:hover:text-blue-300 hover:scale-125 hover:-translate-y-2 transition-all' target='_blank' href="https://www.facebook.com/hasibulhasan.plabon.5/"><FaSquareFacebook /></a>
-                            <a className='text-blue-600  dark:text-white dark:hover:text-blue-300 hover:scale-125 hover:-translate-y-2 transition-all' target='_blank' href="https://www.linkedin.com/in/hasibulhasanmec/"><FaLinkedin /></a>
-                            <a className='text-slate-900 dark:text-white hover:scale-125 dark:hover:text-slate-300 hover:-translate-y-2 transition-all' target='_blank' href="https://github.com/MHShiqder"><FaGithub /></a>
-                            <a className='text-black dark:text-white hover:scale-125 dark:hover:text-slate-300  hover:-translate-y-2 transition-all' target='_blank' href="https://x.com/HASIBUL83782278"><FaX /></a>
+                        <div className='flex text-2xl  gap-6'>
+                            <a className={socialStyle} target='_blank' href="https://github.com/MHShiqder"><FaGithub /></a>
+                            <a className={socialStyle} target='_blank' href="https://www.linkedin.com/in/hasibulhasanmec/"><FaLinkedin /></a>
+                            <a className={socialStyle} target='_blank' href="https://x.com/HASIBUL83782278"><FaX /></a>
+                            <a className={socialStyle} target='_blank' href="https://www.facebook.com/hasibulhasan.plabon.5/"><FaSquareFacebook /></a>
 
-                        </div>
-                        {/* resume download button  */}
-                        <div className='flex gap-5'>
-                            <a href="/Resume(Md. Hasibul Hasan) bw.pdf" download="Hasibul Hasan's resume" className='btn btn-ghost bg-sky-600 text-lg font-semibold text-white'><img className='w-6' src={download} alt="" /> Download Resume</a>
-
-
-
-                            <a href="/Resume(Md. Hasibul Hasan) bw.pdf" target='_blank'
-                                rel="noopener noreferrer" className='btn btn-ghost bg-sky-400 text-lg font-semibold text-white dark:text-gray-100 dark:bg-sky-500'> View Resume</a>
                         </div>
 
                     </div>
                     {/* hero section image part  */}
-                    <div className='w-1/3'>
-                        <img className='rounded-full border-8 border-sky-500 dark:border-sky-300' src={HeroImage} alt="owner image" />
-                    </div>
+                    <motion.div
+                        className='w-2/3 max-w-52 md:max-w-max md:w-1/3 lg:w-[360px] lg:mr-10 bg-accent rounded-3xl p-6 shadow-[6px_6px_10px_rgba(0,0,0,0.4),-6px_-6px_10px_rgba(125,125,125,0.3)] '
+                        animate={{ y: [0, -20, 0], }}
+                        transition={{
+                            duration: 7,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                        }}>
+                        <img className='rounded-full border-4 shadow-[3px_3px_10px,-3px_-3px_10px] shadow-primary/30 border-primary/80' src={HeroImage} alt="owner image" />
+                    </motion.div>
                 </div>
             </div>
 
+            {/* Glowing Circles with no solid body */}
+            <div className="absolute top-40 right-40 md:top-52 md:right-52 w-5 h-5 rounded-full bg-primary/20 blue_glow "></div>
+            <div className="absolute bottom-40 left-40 md:bottom-52 md:left-52 w-5 h-5 rounded-full bg-secondary/20 green_glow "></div>
         </div>
     );
 };
