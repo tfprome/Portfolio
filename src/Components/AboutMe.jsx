@@ -1,38 +1,53 @@
-import React, { useEffect } from 'react';
-import Lottie from 'lottie-react';
-import coding from '../Lottie/coding.json'
-import AOS from "aos";
-import "aos/dist/aos.css";
 
+import SectionTittle from './shared/SectionTittle';
+import portrait from '../assets/greenSmall (2).webp'
+import Specification from './shared/Specification';
+import { Link } from 'react-scroll';
 const AboutMe = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 500, // Animation duration in milliseconds
-            easing: "ease-in-out",
-            delay: 0, // Animation easing
-            // Whether animation should happen only once
-        });
-        return () => AOS.refreshHard();
-    }, []);
+
 
     return (
-        <div id='about-me' className='pt-20'>
+        <div id='about-me' className='section-container '>
             {/* title  */}
-            <h1 className='text-5xl text-center font-bold mb-14'>About Me</h1>
+            <SectionTittle head="About Me" tittle1="Get to know " tittle2="who I am" subTittle="" color="secondary"></SectionTittle>
 
             {/* section content */}
-            <div className='w-11/12 mx-auto flex flex-col md:flex-row gap-10 items-center z-10'>
-                <div data-aos="fade-down" className='md:w-1/5 w-1/2 '>
-                    <Lottie animationData={coding}></Lottie>
+            <div className='flex flex-col lg:flex-row gap-10 md:gap-14 items-center '>
+                {/* image part  */}
+                <div className='w-[50%] md:w-[40%]   relative rounded-2xl border-glow2 '>
+                    <img src={portrait} alt="" className='object-contain rounded-2xl relative z-10' />
+
+                    {/* glowing balls  */}
+                    <div className="absolute top-0 left-0  w-5 h-5 rounded-full bg-primary/20 blue_glow scale-50 "></div>
+                    <div className="absolute bottom-0 right-0 w-5 h-5 rounded-full bg-secondary/20 green_glow scale-[0.3]"></div>
                 </div>
-                <div data-aos="fade-down" className='md:w-4/5 text-justify'>
-                    <p className='  '>Hello! I'm a front-end developer from Bangladesh with a deep passion for building innovative and user-friendly websites. My programming journey began at Mymensingh Engineering College, where I earned my B.Sc. in Computer Science and Engineering. It was there that I discovered my love for coding and design. Over time, I’ve grown proficient in HTML, CSS, JavaScript, React, Tailwind CSS, and I also work with Node.js and Express.js to create robust full-stack applications.
-                        <br />
-                        <br />
-                        I enjoy working on projects that challenge me and push my creativity. My favorite part of web development is combining aesthetics with functionality to create smooth, intuitive user experiences. I thrive in a collaborative environment and love teamwork, as it sparks new ideas and encourages growth. When I’m not immersed in coding, you’ll find me reading up on the latest trends, working on personal projects, or enjoying a game of cricket. I also love playing the guitar when I need to unwind and find some inspiration.
-                        <br />
-                        <br />
-                        I believe in the power of continuous learning and always strive to improve my skills. My ultimate goal is to create websites that leave a lasting impact, all while having fun along the way.</p>
+
+                {/* information part  */}
+                <div className=' text-justify w-full lg:w-[60%]'>
+                    {/* tittle  */}
+                    <h3 className='text-2xl md:text-[1.75rem] text-white font-semibold py-5 md:py-6'>Junior Fullstack Developer</h3>
+                    {/* description  */}
+                    <div className='space-y-3 pb-6 text-base md:text-[1.0625rem] text-gray-300'>
+                        <p className=''>I'm a passionate front-end developer with a keen eye for design and a dedication to creating intuitive, engaging user experiences. With a background in both design and development, I bridge the gap between aesthetics and functionality.</p>
+                        <p className=''>My journey in web development started 5 years ago, and I've been in love with crafting digital experiences ever since. I specialize in building responsive, accessible websites and applications that not only look great but perform exceptionally well.</p>
+                        <p className=''>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or hiking in the mountains to recharge my creative batteries.</p>
+                    </div>
+                    {/* specification  */}
+                    <div className='flex md:w-[80%] justify-between  pb-5'>
+                        <div className='space-y-5'>
+                            <Specification tittle={"Name"} subTittle={"Md. Hasibul Hasan"}/>
+                            <Specification tittle={"Location"} subTittle={"Manikgonj,Dhaka"}/>
+                        </div>
+                        <div className='space-y-5'>
+                            <Specification tittle={"Email"} subTittle={"hasibul277127@gmail.com"}/>
+                            <Specification tittle={"Availability"} subTittle={"Open to opportunities"}/>
+                        </div>
+                    </div>
+                    {/* CTA buttons  */}
+                    <div className='flex gap-5 py-5'>
+                        <Link to='contact-me' className='glow-button btn'>Lets Connect</Link>
+                        <a href="/Resume(Md. Hasibul Hasan) bw.pdf" download="Hasibul Hasan's resume" className='outlined-button btn'> Download Resume</a>
+                    </div>
                 </div>
             </div>
         </div>

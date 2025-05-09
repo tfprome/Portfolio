@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaSquareFacebook, FaX } from "react-icons/fa6";
 import { useTypewriter } from 'react-simple-typewriter'
-import HeroImage from "../assets/hasib-formal  compressed square-min.png"
+import HeroImage from "../assets/hasib-formal  compressed square-min.webp"
 import download from "../assets/download.png"
 import { Link } from 'react-scroll';
 const HeroSection = () => {
@@ -12,9 +12,9 @@ const HeroSection = () => {
         loop: 0
     })
     return (
-        <div id='hero' className=' bg-base-100  min-h-screen'>
+        <div id='hero' className=' bg-base-100 pt-20'>
 
-            <div className='h-full  bg-graph-paper relative'>
+            <div className='min-h-screen bg-graph-paper relative '>
 
                 <div id='home' className='flex flex-col lg:flex-row py-20 justify-between items-center gap-20  max-w-7xl px-10  mx-auto relative z-20
          '>
@@ -33,13 +33,13 @@ const HeroSection = () => {
                         {/* CTA buttons  */}
                         <div className='flex gap-5 my-10'>
                             {/* view resume using google drive  */}
-                            <a href="https://drive.google.com/file/d/1gmVgmsByTshx3cPtmET7qTub18g-DG7J/view?usp=sharing" target='_blank' className='btn bg-gradient-to-r from-primary to-secondary border-none hover:bg-gradient-to-r text-lg font-normal text-base-100 rounded-full px-3 py-2 md:py-auto md:px-6 hover:shadow-lg hover:shadow-primary/60'>Resume</a>
+                            <a href="https://drive.google.com/file/d/1gmVgmsByTshx3cPtmET7qTub18g-DG7J/view?usp=sharing" target='_blank' className='glow-button btn'>Resume</a>
 
                             {/* resume direct download button  */}
                             {/* <a href="/Resume(Md. Hasibul Hasan) bw.pdf" download="Hasibul Hasan's resume" className='btn btn-ghost bg-sky-600 text-lg font-semibold text-white'><img className='w-6' src={download} alt="" /> Download Resume</a> */}
 
                             {/* jump to project section  */}
-                            <Link to='projects' className='btn bg-transparent hover:bg-transparent border border-gray-600 hover:border-primary text-base font-normal text-white rounded-full px-3 py-2 h md:py-auto md:px-6'>View My Work</Link>
+                            <Link to='projects' className='outlined-button btn'>View My Work</Link>
 
                             {/* resume direct view button  */}
                             {/* <a href="/Resume(Md. Hasibul Hasan) bw.pdf" target='_blank'
@@ -58,7 +58,7 @@ const HeroSection = () => {
                     </div>
                     {/* hero section image part  */}
                     <motion.div
-                        className='w-2/3 max-w-52 md:max-w-max md:w-1/3 lg:w-[360px] lg:mr-10 bg-accent rounded-3xl p-6 shadow-[6px_6px_10px_rgba(0,0,0,0.4),-6px_-6px_10px_rgba(125,125,125,0.3)] '
+                        className='w-2/3 max-w-52 md:max-w-max md:w-1/3 lg:w-[360px] lg:mr-10 bg-accent rounded-3xl p-6 border-glow '
                         animate={{ y: [0, -20, 0], }}
                         transition={{
                             duration: 7,

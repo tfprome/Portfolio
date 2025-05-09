@@ -100,7 +100,7 @@ const Header = () => {
     </>
     return (
 
-        <div className="sticky top-0 bg-accent/60 backdrop-blur-md   z-50 shadow-lg">
+        <div className="fixed top-0 bg-accent/60 backdrop-blur-md w-full  z-50 shadow-lg">
             <div className='max-w-7xl mx-auto px-10'>
 
 
