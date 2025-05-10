@@ -75,7 +75,7 @@
 
 /* section container css */
 .section-container {
-  padding-top: 8rem;        /* pt-32 = 32 * 0.25rem = 8rem */
+  padding-top: 7rem;        /* pt-32 = 32 * 0.25rem = 8rem */
   min-height: 100vh;        /* min-h-screen */
   max-width: 80rem;         /* max-w-7xl = 1280px = 80rem */
   padding-left: 2.5rem;     /* px-10 = 10 * 0.25rem = 2.5rem */

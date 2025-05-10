@@ -7,9 +7,9 @@ const AboutMe = () => {
 
 
     return (
-        <div id='about-me' className='section-container '>
+        <div id='about-me' className='section-container pb-20 md:pb-28'>
             {/* title  */}
-            <SectionTittle head="About Me" tittle1="Get to know " tittle2="who I am" subTittle="" color="secondary"></SectionTittle>
+            <SectionTittle head="About Me" tittle1="Get to know" tittle2="who I am" subTittle="" color="secondary"></SectionTittle>
 
             {/* section content */}
             <div className='flex flex-col lg:flex-row gap-10 md:gap-14 items-center '>

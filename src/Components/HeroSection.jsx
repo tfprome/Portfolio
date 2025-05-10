@@ -12,9 +12,9 @@ const HeroSection = () => {
         loop: 0
     })
     return (
-        <div id='hero' className=' bg-base-100 pt-20'>
+        <div id='hero' className=' bg-base-100 pt-20 bg-graph-paper'>
 
-            <div className='min-h-screen bg-graph-paper relative '>
+            <div className='min-h-screen  relative '>
 
                 <div id='home' className='flex flex-col lg:flex-row py-20 justify-between items-center gap-20  max-w-7xl px-10  mx-auto relative z-20
          '>
@@ -61,7 +61,7 @@ const HeroSection = () => {
                         className='w-2/3 max-w-52 md:max-w-max md:w-1/3 lg:w-[360px] lg:mr-10 bg-accent rounded-3xl p-6 border-glow '
                         animate={{ y: [0, -20, 0], }}
                         transition={{
-                            duration: 7,
+                            duration: 5,
                             repeat: Infinity,
                             ease: "easeInOut",
                         }}>
