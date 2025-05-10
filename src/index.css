@@ -83,3 +83,21 @@
   margin-left: auto;        /* mx-auto centers the container */
   margin-right: auto;
 }
+
+
+/* shine effect  */
+@layer utilities {
+  
+  @keyframes shine {
+   0% {
+      transform: translate(-100%, -100%);
+    }
+    100% {
+      transform: translate(100%, 100%);
+    }
+  }
+
+  .animate-shine {
+    animation: shine 5s linear infinite;
+  }
+}
