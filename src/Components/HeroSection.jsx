@@ -1,9 +1,7 @@
-import React from 'react';
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaSquareFacebook, FaX } from "react-icons/fa6";
 import { useTypewriter } from 'react-simple-typewriter'
 import HeroImage from "../assets/hasib-formal  compressed square-min.webp"
-import download from "../assets/download.png"
 import { Link } from 'react-scroll';
 const HeroSection = () => {
     const socialStyle = 'hover:text-primary transition-all ease-in-out duration-300'

@@ -101,3 +101,34 @@
     animation: shine 5s linear infinite;
   }
 }
+
+
+
+/* autoscroll animation  */
+.scroll-container {
+  /* height: 24rem; 
+  width: 16rem;   */
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-content {
+  position: absolute;
+  top: 0;
+  animation: scrollY 15s linear infinite;
+  animation-play-state: running;
+}
+
+/* Pause animation on hover */
+.hover-controller:hover .scroll-content {
+  animation-play-state: paused;
+}
+
+@keyframes scrollY {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-70%);
+  }
+}
