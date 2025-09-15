@@ -3,7 +3,7 @@ import {
 } from "react-router-dom";
 import Root from "../Layout/Root";
 import Home from "../Layout/Home";
-import Library from "../Pages/library";
+import Library from "../Pages/Library.jsx";
 import Visa from "../Pages/Visa";
 import LingoBingo from "../Pages/LingoBingo";
 
