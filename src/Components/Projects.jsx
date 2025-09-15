@@ -87,9 +87,9 @@ const Projects = () => {
                                     <Link to={item.live} target='_blank'><button className='px-4 py-2 rounded-full bg-primary/90 hover:bg-gray-50 text-gray-950'>
                                         Live Project
                                     </button></Link>
-                                    <Link to={item.details}><button className='px-4 py-2 rounded-full bg-transparent border hover:bg-gray-50 text-gray-50 hover:text-gray-950'>
+                                    {/* <Link to={item.details}><button className='px-4 py-2 rounded-full bg-transparent border hover:bg-gray-50 text-gray-50 hover:text-gray-950'>
                                         Details
-                                    </button></Link>
+                                    </button></Link> */}
                                 </div>
                             </div>
                             {/* description  */}
