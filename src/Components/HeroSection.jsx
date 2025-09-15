@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaSquareFacebook, FaX } from "react-icons/fa6";
 import { useTypewriter } from 'react-simple-typewriter'
-import HeroImage from "../assets/hasib-formal  compressed square-min.webp"
+import HeroImage from "../assets/portfolio.jpg"
 import { Link } from 'react-scroll';
 const HeroSection = () => {
     const socialStyle = 'hover:text-primary transition-all ease-in-out duration-300'
@@ -46,10 +46,9 @@ const HeroSection = () => {
 
                         {/* social icons  */}
                         <div className='flex text-2xl  gap-6'>
-                            <a className={socialStyle} target='_blank' href="https://github.com/MHShiqder"><FaGithub /></a>
-                            <a className={socialStyle} target='_blank' href="https://www.linkedin.com/in/hasibulhasanmec/"><FaLinkedin /></a>
-                            <a className={socialStyle} target='_blank' href="https://x.com/HASIBUL83782278"><FaX /></a>
-                            <a className={socialStyle} target='_blank' href="https://www.facebook.com/hasibulhasan.plabon.5/"><FaSquareFacebook /></a>
+                            <a className={socialStyle} target='_blank' href="https://github.com/tfprome"><FaGithub /></a>
+                            <a className={socialStyle} target='_blank' href="https://www.linkedin.com/in/tasnim-ferdous-143050374/"><FaLinkedin /></a>
+                            <a className={socialStyle} target='_blank' href="https://www.facebook.com/tf.promi"><FaSquareFacebook /></a>
 
                         </div>
 

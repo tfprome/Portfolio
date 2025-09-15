@@ -1,7 +1,7 @@
 import SectionTittle from './shared/SectionTittle';
 import library from "../assets/library.webp"
-import scholarease from "../assets/scholarease.webp"
-import brainiacs from "../assets/brainiacs.webp"
+import greenpitch from "../assets/green-pitch.netlify.app_.png"
+import expresso from "../assets/expresso99.netlify.app_home.png"
 import visa from "../assets/visa.png"
 import lingobingo from "../assets/lingobingo.png"
 // import portfolio from "../assets/portfolio.png"
@@ -10,22 +10,22 @@ import { useEffect, useRef, useState } from 'react';
 
 const projectItems = [
     {
-        photo: scholarease,
-        tittle: "ScholarEase",
-        type: "An online Scholarship management system",
-        subTittle: "An online library management system An online library management system",
+        photo: greenpitch,
+        tittle: "Green Pitch",
+        type: "An online Platform to buy sportswear products",
+        subTittle: "An online Platform to buy sportswear products",
         techStack: ["React", "Node.js","Express.js"],
         details: "/library",
-        live: 'https://scholarease1.netlify.app/'
+        live: 'https://green-pitch.netlify.app/'
     },
     {
-        photo: brainiacs,
-        tittle: "Brainiacs",
-        type: "An complete team collaboration tool",
-        subTittle: "An online library management system An online library management system",
-        techStack: ["React", "Node.js"],
+        photo: expresso,
+        tittle: "Expresso",
+        type: "An complete vlog writing site",
+        subTittle: "An online vlog writing website to express everyone's inner thoughts",
+        techStack: ["React", "Node.js", "Express.js"],
         details: "/library",
-        live: 'https://brainiacs1.netlify.app/'
+        live: 'https://expresso99.netlify.app/home'
     },
     {
         photo: library,

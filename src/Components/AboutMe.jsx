@@ -1,6 +1,6 @@
 
 import SectionTittle from './shared/SectionTittle';
-import portrait from '../assets/greenSmall (2).webp'
+import portrait from '../assets/portfoliopic.jpg'
 import Specification from './shared/Specification';
 import { Link } from 'react-scroll';
 const AboutMe = () => {
@@ -35,11 +35,11 @@ const AboutMe = () => {
                     {/* specification  */}
                     <div className='flex md:w-[80%] justify-between  pb-5'>
                         <div className='space-y-5'>
-                            <Specification tittle={"Name"} subTittle={"Md. Hasibul Hasan"}/>
-                            <Specification tittle={"Location"} subTittle={"Manikgonj,Dhaka"}/>
+                            <Specification tittle={"Name"} subTittle={"Tasnim Ferdous"}/>
+                            <Specification tittle={"Location"} subTittle={"Basabo,Dhaka"}/>
                         </div>
                         <div className='space-y-5'>
-                            <Specification tittle={"Email"} subTittle={"hasibul277127@gmail.com"}/>
+                            <Specification tittle={"Email"} subTittle={"tfpromy99@gmail.com"}/>
                             <Specification tittle={"Availability"} subTittle={"Open to opportunities"}/>
                         </div>
                     </div>

@@ -24,21 +24,7 @@ const Header = () => {
                  after:w-0 after:transition-all after:duration-300 
                  group-hover:after:w-full group-[.active-link]:after:w-full`.trim();
     const links = <>
-        {/* <Links className="mr-8 hover:border-b " activeClass="border-b text-white" to="hero" spy={true}>
-            <li className='hover:cursor-pointer text-sm font-semibold' >Home</li>
-        </Links>
-        <Links className="mr-8 hover:border-b transition-transform  ease-in-out " to="about-me" spy={true} activeClass="border-b text-white" >
-            <li className='hover:cursor-pointer text-sm font-semibold' >About_Me</li>
-        </Links>
-        <Links className="mr-8 hover:border-b transition-all ease-in-out " spy={true} activeClass="border-b text-white" to="skill">
-            <li className='hover:cursor-pointer text-sm font-semibold' >Skill</li>
-        </Links>
-        <Links className="mr-8 hover:border-b transition-all ease-in-out " spy={true} activeClass="border-b text-white" to="projects">
-            <li className='hover:cursor-pointer text-sm font-semibold' >Projects</li>
-        </Links>
-        <Links className="mr-8 lg:mr-0 hover:border-b transition-all ease-in-out " spy={true} activeClass="border-b text-white" to="contact-me">
-            <li className='hover:cursor-pointer text-sm font-semibold' >Contact_Me</li>
-        </Links> */}
+       
 
         <Links
             to="hero"
@@ -107,7 +93,7 @@ const Header = () => {
                 <div className="navbar justify-between px-0">
                     <div className="navbar-start w-auto px-0">
 
-                        <a className="pr-4 py-2 rounded-sm text-white text-lg font-bold hover:bg-gradient-to-r from-primary  to-secondary hover:text-transparent hover:bg-clip-text" href='https://wa.me/8801791669909?text=Hi%20there%2C%20I%27m%20interested%20in%20working%20with%20you!' target="_blank"><span className="text-primary text-xl">{"<"}</span> Hire Me <span className="text-secondary text-xl">{"/>"}</span></a>
+                        <a className="pr-4 py-2 rounded-sm text-white text-lg font-bold hover:bg-gradient-to-r from-primary  to-secondary hover:text-transparent hover:bg-clip-text" href='https://wa.me/8801705790831?text=Hi%20there%2C%20I%27m%20interested%20in%20working%20with%20you!' target="_blank"><span className="text-primary text-xl">{"<"}</span> Hire Me <span className="text-secondary text-xl">{"/>"}</span></a>
 
 
                     </div>

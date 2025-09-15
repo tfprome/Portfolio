@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div>
             <Helmet>
-                <title>Hasibul Hasan | Portfolio</title>
+                <title>Tasnim Ferdous | Portfolio</title>
             </Helmet>
             {/* hero section  */}
             <HeroSection></HeroSection>
