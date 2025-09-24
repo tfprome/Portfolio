@@ -46,7 +46,7 @@ const AboutMe = () => {
                     {/* CTA buttons  */}
                     <div className='flex gap-5 py-5'>
                         <Link to='contact-me' className='glow-button btn'>Lets Connect</Link>
-                        <a href="/Resume(Md. Hasibul Hasan) bw.pdf" download="Hasibul Hasan's resume" className='outlined-button btn'> Download Resume</a>
+                        <a href="/TasnimFerdous_CV.pdf" download="Tasnim Ferdous's resume" className='outlined-button btn'> Download Resume</a>
                     </div>
                 </div>
             </div>

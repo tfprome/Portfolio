@@ -31,7 +31,7 @@ const HeroSection = () => {
                         {/* CTA buttons  */}
                         <div className='flex gap-5 my-10'>
                             {/* view resume using google drive  */}
-                            <a href="https://drive.google.com/file/d/1gmVgmsByTshx3cPtmET7qTub18g-DG7J/view?usp=sharing" target='_blank' className='glow-button btn'>Resume</a>
+                            <a href="https://drive.google.com/file/d/1sF07Cm7CmT_SwVLgNWYSsyiTDkWI_yzv/view?usp=drive_link" target='_blank' className='glow-button btn'>Resume</a>
 
                             {/* resume direct download button  */}
                             {/* <a href="/Resume(Md. Hasibul Hasan) bw.pdf" download="Hasibul Hasan's resume" className='btn btn-ghost bg-sky-600 text-lg font-semibold text-white'><img className='w-6' src={download} alt="" /> Download Resume</a> */}
