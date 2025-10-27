@@ -2,8 +2,7 @@ import SectionTittle from './shared/SectionTittle';
 import library from "../assets/library.webp"
 import greenpitch from "../assets/green-pitch.netlify.app_.png"
 import expresso from "../assets/expresso99.netlify.app_home.png"
-import visa from "../assets/visa.png"
-import lingobingo from "../assets/lingobingo.png"
+import tasksync from "../assets/tasksync1.png"
 // import portfolio from "../assets/portfolio.png"
 import { Link } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
@@ -28,13 +27,13 @@ const projectItems = [
         live: 'https://expresso99.netlify.app/home'
     },
     {
-        photo: library,
-        tittle: "E-Library",
-        type: "An online library management system",
-        subTittle: "An online library management system An online library management system",
-        techStack: ["React", "Node.js"],
+        photo: tasksync,
+        tittle: "TaskSync",
+        type: "An online task management system",
+        subTittle: "multi-user task management, ensuring accurate tracking across various status stages",
+        techStack: ["Redux", "Node.js","Express.js","TypeScript"],
         details: "/library",
-        live: 'https://jolly-salmiakki-820fae.netlify.app/'
+        live: 'https://tasksync1.netlify.app/'
     },
     
 ]
